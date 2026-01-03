@@ -1,0 +1,25 @@
+<Module>
+	<Name value="Auto Run and Walk"/>
+	<Id value="AutoRunandWalk"/>
+	<Version value="v1.0.0"/>
+	<DefaultModule value="false"/>
+	<ModuleCategory value="Singleplayer"/>
+	<Official value="false"/>
+	<DependedModules>
+		<DependedModule Id="Bannerlord.Harmony"/>
+		<DependedModule Id="Native"/>
+		<DependedModule Id="SandBoxCore"/>
+		<DependedModule Id="Sandbox"/>
+		<DependedModule Id="CustomBattle"/>
+		<DependedModule Id="StoryMode"/>
+	</DependedModules>
+    <SubModules>
+        <SubModule>
+            <Name value="AutoRunandWalk"/>
+            <DLLName value="AutoRunandWalk.dll"/>
+            <SubModuleClassType value="AutoRunandWalk.SubModule"/>
+            <Tags />
+        </SubModule>
+    </SubModules>
+</Module>
+
