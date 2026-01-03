@@ -1,5 +1,5 @@
 <p align="center">
-	<a href="https://www.nexusmods.com/mountandblade2bannerlord/mods/" alt="NexusMods Auto Run and Walk">
+	<a href="https://www.nexusmods.com/mountandblade2bannerlord/mods/9613" alt="NexusMods Auto Run and Walk">
 	<img src="https://img.shields.io/badge/NexusMods-Auto Run and Walk-yellow.svg" /></a>
 </p>
 
