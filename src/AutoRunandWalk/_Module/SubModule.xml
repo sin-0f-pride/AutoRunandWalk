@@ -6,11 +6,9 @@
 	<ModuleCategory value="Singleplayer"/>
 	<Official value="false"/>
 	<DependedModules>
-		<DependedModule Id="Bannerlord.Harmony"/>
 		<DependedModule Id="Native"/>
 		<DependedModule Id="SandBoxCore"/>
 		<DependedModule Id="Sandbox"/>
-		<DependedModule Id="CustomBattle"/>
 		<DependedModule Id="StoryMode"/>
 	</DependedModules>
     <SubModules>
