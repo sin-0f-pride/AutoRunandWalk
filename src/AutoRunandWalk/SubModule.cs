@@ -8,8 +8,6 @@ namespace AutoRunandWalk
 {
     public class SubModule : MBSubModuleBase
     {
-        public static bool IsAutowalk { get; set; } = false;
-
         protected override void OnApplicationTick(float dt)
         {
             if (Mission.Current != null && ScreenManager.TopScreen != null)
