@@ -44,8 +44,4 @@
 		<Exec Command="xcopy /Y &quot;C:\Users\kille\Desktop\Modding\Bannerlord\Bannerlord Repos\AutoRunandWalk\src\AutoRunandWalk\bin\x64\Debug\netstandard2.0\AutoRunandWalk.dll&quot; &quot;C:\Program Files\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\AutoRunandWalk\bin\Win64_Shipping_Client\AutoRunandWalk.dll&quot;" />
 	</Target>
 
-  <ItemGroup>
-    <Folder Include="_Module\" />
-  </ItemGroup>
-
 </Project>
