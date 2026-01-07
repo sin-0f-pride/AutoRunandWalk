@@ -8,20 +8,25 @@ namespace AutoRunandWalk
 {
     public class SubModule : MBSubModuleBase
     {
-        public static bool IsAutowalk { get; set; } = false;
-
         protected override void OnApplicationTick(float dt)
         {
-            if (Mission.Current != null && ScreenManager.TopScreen != null)
+            if (Mission.Current != null)
             {
-                if (Mission.Current.IsFieldBattle || Mission.Current.IsSiegeBattle || Mission.Current.IsNavalBattle || Mission.Current.SceneName.Contains("arena") || (MapEvent.PlayerMapEvent != null && MapEvent.PlayerMapEvent.IsHideoutBattle))
+                try
                 {
-                    MissionScreen missionScreen = ScreenManager.TopScreen as MissionScreen;
-                    if (missionScreen != null && missionScreen.InputManager != null && missionScreen.InputManager.IsKeyPressed(InputKey.Equals))
+                    if (ScreenManager.TopScreen != null && (Mission.Current.IsFieldBattle || Mission.Current.IsSiegeBattle || Mission.Current.IsNavalBattle || Mission.Current.SceneName.Contains("arena") || (MapEvent.PlayerMapEvent != null && MapEvent.PlayerMapEvent.IsHideoutBattle)))
                     {
-                        Input.PressKey(new Key(InputKey.W).InputKey);
-                        Mission.Current.SetLastMovementKeyPressed(Agent.MovementControlFlag.Forward);
+                        MissionScreen missionScreen = ScreenManager.TopScreen as MissionScreen;
+                        if (missionScreen != null && missionScreen.InputManager != null && missionScreen.InputManager.IsKeyPressed(InputKey.Equals))
+                        {
+                            Input.PressKey(new Key(InputKey.W).InputKey);
+                            Mission.Current.SetLastMovementKeyPressed(Agent.MovementControlFlag.Forward);
+                        }
                     }
+                }
+                catch
+                {
+
                 }
             }
         }
